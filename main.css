@@ -1,8 +1,48 @@
 /* Styles for Product Page Customization */
 /* NOTE: Do not edit the Bootstrap CSS files. */
 
+
+/* boostrap overrides */
+
+h1 {
+    margin: 0;
+    padding:0;
+}
+
+
+/* end boostrap overrides */
+
 body {
     padding-top: 30px;
     padding-bottom: 20px;
     color: green;
+}
+.page-wrapper {
+    margin: 0 10px;
+}
+header h1 {
+    float: left;
+}
+header .main-login {
+    float: right;
+    
+}
+header hr {
+    clear: both;
+    margin-bottom:10px;
+}
+header .login,header .cart {
+    display:inline-block;
+}
+header nav {
+    margin-left: 120px;
+    display: inline-block;
+}
+header nav li {
+    display: inline-block;
+    text-align: center;
+    width: 80px;   
+}
+header .search {
+    float: right;
 }
