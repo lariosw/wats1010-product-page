@@ -1,24 +1,31 @@
-/* Styles for Product Page Customization */
-/* NOTE: Do not edit the Bootstrap CSS files. */
-
-
 /* boostrap overrides */
+
 
 h1 {
     margin: 0;
     padding:0;
 }
 
-
 /* end boostrap overrides */
 
 body {
-    padding-top: 30px;
     padding-bottom: 20px;
-    color: green;
+    background-color: lavender;
 }
-.page-wrapper {
+.content-wrapper {
     margin: 0 10px;
+    min-width: 1150px;
+    width: 1150px;
+    margin: 0 auto;
+}
+
+/* header */
+header {
+    background-color: black;
+    color: white;
+    font-weight: 300;
+    padding: 5px;
+    
 }
 header h1 {
     float: left;
@@ -27,6 +34,9 @@ header .main-login {
     float: right;
     
 }
+header img {
+    background-color: white;
+}
 header hr {
     clear: both;
     margin-bottom:10px;
@@ -34,15 +44,181 @@ header hr {
 header .login,header .cart {
     display:inline-block;
 }
+header .login a {
+    color: white;
+}
+header .login a:hover {
+    color: mediumvioletred;
+}
 header nav {
     margin-left: 120px;
     display: inline-block;
 }
+/*header nav li:hover*/
 header nav li {
     display: inline-block;
     text-align: center;
-    width: 80px;   
+    width: 80px; 
+    color: white;
+}
+header nav li a {
+    display: inline-block;
+    text-align: center;
+    width: 80px; 
+    color: white;
+}
+header nav li a:hover {
+    color: mediumvioletred;
 }
 header .search {
     float: right;
+}
+
+/*code for top middle section*/
+iframe {
+    border-right: solid 3px black;
+    border-left: solid 3px black;
+    padding: 25px 50px 25px 25px;
+    margin-top: 40px;
+    margin-left: 100px;
+    width: 30%;
+    height: auto;
+}
+div .yelp-badge {
+    margin-left: 135px;
+}
+section .locate {
+    background-color: white;
+    height: 250px;
+    width: 300px;
+    float: left;
+    position: relative;
+    border: 3px solid hotpink;
+    box-shadow: 10px 10px 5px #888888;
+}
+section .locate p {
+    margin: 0 31px;
+    font-family: helvetica;
+    font-weight: 600;
+    font-size: 25px;
+}
+.locate li a {
+    color: black;
+    font-style:italic;  
+}
+div.accounts#signin {
+    float: right;
+    margin-right: 30px;
+}
+div.accounts#signin a {
+ color: black;
+}
+.intro {
+    padding: 25px;
+    background-image:url(backgroundimages/makeup3.jpeg)
+}.signup {
+    border: 1px solid black;
+    padding: 3px 5px;
+    text-align: center;
+    margin: 15px;
+}
+.login {
+    border: 1px solid black;
+    padding: 3px 5px;
+    text-align: center;
+}
+.intro .accounts a {
+    display: block;
+    background-color: white;
+    margin: 10px;
+    padding: 5px 50px;
+}
+.intro .accounts a:hover{
+        background-color: black;
+}
+div.accounts#signin a:hover {
+    color: white; 
+}
+.intro .accounts .signup {
+    margin-top: 60px;  
+}
+
+.paynow {
+    border: 1px solid black;
+    padding: 3px 5px;
+    text-align: center;
+    height: 50px;
+}
+.paynow img {
+    margin-top: 5px;
+}
+
+/* middle */
+section.middle {
+    clear:both;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+section.middle .preamble {
+    /*float: left;*/
+    font-size: 30px;
+    line-height: 40px;
+    /*width: 220px;*/
+    width: 20%;
+    height: 357px;
+    padding: 50px 30px;
+    color: black;
+    background: white;
+    border: 3px solid black;
+    display: inline-block;
+    vertical-align: top;
+}
+section .accounts {
+    height: 315px; 
+    margin-top: -35px;
+}
+ .carousel-wrapper {
+    width: 58%;
+    height:50px;
+    background: yellow;
+    display: inline-block;
+}
+div .aside {
+    width: 21%;
+    background: black;
+    display: inline-block;
+    /*float: right;*/
+    vertical-align: top;
+    height: 357px;
+}
+div .aside h2 {
+    position: relative;
+    font-size: 50px;
+    padding: 129px 50px;
+    -ms-transform: rotate(450deg);
+    -webkit-transform: rotate(450deg);
+    transform: rotate(450deg);
+    color:black;
+    text-align:center;
+    color: hotpink;
+}
+
+/* footer */
+div.bottom-nav {
+    display:inline-block;
+    margin: 20px;
+}
+ul li {
+    list-style-type: none;
+}
+footer {
+    margin-top: 0;
+    background: black;
+}
+footer .bottom-nav {
+    vertical-align: top;
+}
+footer .bottom-nav h3 {
+    color: white;
 }

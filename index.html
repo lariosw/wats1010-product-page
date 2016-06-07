@@ -1,220 +1,246 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- TODO: Add proper head tag to provide a page description for search
-             engines. -->
-        <title>SMACK Cosmetics</title>
-        <!-- Bootstrap CSS Framework -->
-        <!-- You can remove the ``link`` tags below if you don't want to use
-             Bootstrap with your site. If you choose to use Bootstrap, be sure
-             to reference the resources and the Bootstrap official
-             documentation: http://getbootstrap.com.
-
-             Please Note: This repo does not include the Bootstrap Javascript
-             plugins, so you cannot use the features documented under
-             "Javascript" on the Bootstrap documentation site. -->
-        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
-        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-theme.css">
-        <!-- End Bootstrap CSS Framework -->
-
-        <!-- TODO: replace favicon, apple-touch-icon, and tile images to best
-             support bookmarking. -->
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="favicon" href="favicon.ico">
-        
-        <!--custom styles -->
-        <link rel="stylesheet" href="main.css">
-
-    </head>
-    <body>
-    <div class="page-wrapper">
-        <header>
-            <h1>SMACK</h1>
-            <div class=main-login>
-                <div class="login">
-                  <a href="">LOGIN</a>
-                </div>
-                <div class="cart">
-                <a href="">
-                    <img src="carticon.png">
-                </a>
-                </div> 
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>SMACK Cosmetics</title>
+      <!-- Bootstrap CSS Framework -->
+      <!-- You can remove the ``link`` tags below if you don't want to use
+         Bootstrap with your site. If you choose to use Bootstrap, be sure
+         to reference the resources and the Bootstrap official
+         documentation: http://getbootstrap.com.
+         
+         Please Note: This repo does not include the Bootstrap Javascript
+         plugins, so you cannot use the features documented under
+         "Javascript" on the Bootstrap documentation site. -->
+      <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+      <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-theme.css">
+      <!-- End Bootstrap CSS Framework -->
+      <!-- Replaced favicon -->
+      <link rel="icon"  type="image/jpeg" href="favicon.jpeg">
+      <!--custom styles -->
+      <link rel="stylesheet" href="main.css">
+      <!--scripts-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+   </head>
+   <body>
+      <header>
+         <h1>SMACK</h1>
+         <!--main login features-->
+         <div class=main-login>
+            <div class="login">
+               <a href="">LOGIN</a>
             </div>
-            <hr>
-            <nav role="navigation">
-                <ul>
-                    <li><a href="">PRODUCTS</a></li>
-                    <li><a href="">ARTISTRY</a></li>
-                    <li><a href="">ABOUT US</a></li>
-                    <li><a href="">OFFERS</a></li>
-                </ul>
-            </nav>
-            <div class="search" id="search-login">
-                <form>  
-                    <button type="search" name="Search" value="Search"><img src="search.png"></button>
-                    <input  name="search" type="text" placeholder="Search..." required>
-                </form>
+            <div class="cart">
+               <a href="">
+               <img src="carticon.png">
+               </a>
             </div>
-        </header>
-        
-        <section class="intro" id="smack-intro">
-            
+         </div>
+         <hr>
+         <nav role="navigation">
+            <ul>
+               <li><a href="">PRODUCTS</a>
+               </li>
+               <li><a href="">ARTISTRY</a>
+               </li>
+               <li><a href="">ABOUT US</a>
+               </li>
+               <li><a href="">OFFERS</a>
+               </li>
+            </ul>
+         </nav>
+         <div class="search" id="search-login">
+            <form>
+               <button type="search" name="Search" value="Search"><img src="search.png">
+               </button>
+               <input name="search" type="text" placeholder="Search..." required>
+            </form>
+         </div>
+      </header>
+      <!--up middle section added-->
+      <div class="content-wrapper">
+         <section class="intro" id="smack-intro">
+            <!--embedded explanatory video-->
             <iframe width="560" height="315" src="https://www.youtube.com/embed/L48g1ZWLMdo" frameborder="0" allowfullscreen></iframe>
-
-            
             <div class="locate" id="shortcuts">
-            <p>SMACK is more than makeup...
-            </p>
-            <ul>
-            <li>
-                <a href="" title="PRODUCTS">PRODUCTS</a>
-            </li>
-            <li><a href="" title="ARTISTRY">ARTISTRY
-            </a>
-                </li>
-            <li><a href="" title="ABOUT US">ABOUT US
-            </a>
-                </li>
-            <li><a href="" title=" OFFERS">OFFERS
-            </a>
-                </li>
-                </ul>
+               <p>SMACK is more than makeup...
+               </p>
+               <ul>
+                  <li>
+                     <a href="" title="PRODUCTS">PRODUCTS</a>
+                  </li>
+                  <li>
+                     <a href="" title="ARTISTRY">ARTISTRY</a>
+                  </li>
+                  <li>
+                     <a href="" title="ABOUT US">ABOUT US</a>
+                  </li>
+                  <li>
+                     <a href="" title=" OFFERS">OFFERS</a>
+                  </li>
+               </ul>
+               <!--embedded yelp badge-->
+               <div class=yelp-badge id="yelp-biz-badge-rrc-9KDus1Sfsym-yoZp3fxPYw"><a href="http://yelp.com/biz/lucys-beauty-bar-seattle" target="_blank">Check out Lucy&#39;s Beauty Bar on Yelp</a>
+               </div>
+               <script>
+                  (function(d, t) {
+                      var g = d.createElement(t);
+                      var s = d.getElementsByTagName(t)[0];
+                      g.id = "yelp-biz-badge-script-rrc-9KDus1Sfsym-yoZp3fxPYw";
+                      g.src = "//yelp.com/biz_badge_js/en_US/rrc/9KDus1Sfsym-yoZp3fxPYw.js";
+                      s.parentNode.insertBefore(g, s);
+                  }(document, 'script'));
+               </script>
             </div>
-            
-             <div id="yelp-biz-badge-rrc-9KDus1Sfsym-yoZp3fxPYw"><a href="http://yelp.com/biz/lucys-beauty-bar-seattle" target="_blank">Check out Lucy&#39;s Beauty Bar on Yelp</a></div><script>(function(d, t) {var g = d.createElement(t);var s = d.getElementsByTagName(t)[0];g.id = "yelp-biz-badge-script-rrc-9KDus1Sfsym-yoZp3fxPYw";g.src = "//yelp.com/biz_badge_js/en_US/rrc/9KDus1Sfsym-yoZp3fxPYw.js";s.parentNode.insertBefore(g, s);}(document, 'script'));</script>
-        <div class="accounts" id="signin">
-              <a href="">SIGN UP NOW</a>
-              <a href="">LOGIN</a>
-                <a href="">
-                <img src="paynow.gif">
-                </a>
-                </div>
-        <div class="preamble" id="quotation">
-            <p> Elegance is when the inside is as beautiful as the outside. - Coco Chanel
-            </p>
+            <div class="accounts" id="signin">
+               <a class="signup" href="">SIGN UP NOW</a><br>
+               <a class="login" href="">LOGIN</a><br>
+               <a class="paynow" href="">
+                  <!--embedded paynow link-->
+                  <img src="paynow.gif">
+               </a>
             </div>
-        <div class="aside" id="sidebar">
-            <h2> SMACK
-            </h2>
+         </section>
+         <!--middle section with carouseling video-->
+         <section class="middle" id="smack-middle">
+            <div class="preamble" id="quotation">
+               <p> Elegance is when the inside is as beautiful as the outside. - Coco Chanel
+               </p>
             </div>
-        </section>
-        
-        <footer>
-        <div class="navigation" id="bottom-nav">
-            <ul>
-                <li><a href="">SMACK STORES</a>
-                </li>
-                <li><a href="">CUSTOMER SERVICE</a>
-                </li>
-                <li><a href="">ABOUT US</a>
-                </li>
-                <li><a href="">YOUR ACCOUNT</a>
-                </li>
-                <li><a href="">CONNECTS</a>
-                </li>
-            </ul>
+            <!--carousel-->
+            <div class="carousel-wrapper">
+               <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3000">
+                  <ol class="carousel-indicators">
+                     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                     <div class="item active">
+                        <img src="carouselphotos/photo_1.jpg" alt="photo1">
+                        <div class="carousel-caption">
+                           <h3>Ignite your eyes with our bold eye shadow colors!</h3>
+                        </div>
+                     </div>
+                     <div class="item">
+                        <img src="carouselphotos/photo_2.jpg" alt="photo2">
+                        <div class="carousel-caption">
+                           <h3>Our new large lash mascara</h3>
+                        </div>
+                     </div>
+                     <div class="item">
+                        <img src="carouselphotos/photo_3.jpg" alt="photo3">
+                        <div class="carousel-caption">
+                           <h3>Bridal beauty tips on our blog</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                  </a>
+                  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                  </a>
+               </div>
             </div>
-        <div class="bottom-nav" id="locator">
-            <h3> SMACK STORES
-            </h3>
-            <li><a href="" title="store locator">store locator
-                </a>
-            </li>
+            <div class="aside" id="sidebar">
+               <h2> SMACK</h2>
             </div>
-        <div class="bottom-nav" id="contact">
-            <h3> CUSTOMER SERVICE
-            </h3>
-            <ul>       
-            <li><a href="" title="contact us">contact us
-                </a>
-            </li>
-                <li><a href="" title="return policy">return policy
-                </a>
-                </li>
-                <li><a href="" title="FAQs">FAQs
-                </a>
-                </li>
-                   </ul>
+         </section>
+         <!--footer with links to all features on site-->
+         <footer>
+            <div class="bottom-nav" id="locator">
+               <h3> SMACK STORES
+               </h3>
+               <ul>
+                  <li><a href="" title="store locator">store locator
+                     </a>
+                  </li>
+               </ul>
             </div>
-        <div class="bottom-nav" id="about">
-            <h3> ABOUT US
-            </h3>
-            <ul>       
-            <li><a href="" title="the company">the company
-                </a>
-            </li>
-            <li><a href="" title="our philosophy">our philosophy
-                </a>
-            </li>
-            <li><a href="" title="artistry/blog">artistry/blog
-                </a>
-            </li>
-                   </ul>
+            <div class="bottom-nav" id="contact">
+               <h3> CUSTOMER SERVICE
+               </h3>
+               <ul>
+                  <li><a href="" title="contact us">contact us
+                     </a>
+                  </li>
+                  <li><a href="" title="return policy">return policy
+                     </a>
+                  </li>
+                  <li><a href="" title="FAQs">FAQs
+                     </a>
+                  </li>
+               </ul>
             </div>
-        <div class="bottom-nav" id="account">
-            <h3> YOUR ACCOUNT
-            </h3>
-            <ul>       
-            <li><a href="" title="signin/view account">signin/view account
-                </a>
-            </li>
-            <li><a href="" title="order status">order status
-                </a>
-            </li>
-            <li><a href="" title="products">products
-                </a>
-            </li>
-            <li><a href="" title="gift cards">gift cards
-                </a>
-            </li>
-            <li><a href="" title="cart">cart
-                </a>
-            </li>
-            </ul>
+            <div class="bottom-nav" id="about">
+               <h3> ABOUT US
+               </h3>
+               <ul>
+                  <li><a href="" title="the company">the company
+                     </a>
+                  </li>
+                  <li><a href="" title="our philosophy">our philosophy
+                     </a>
+                  </li>
+                  <li><a href="" title="artistry/blog">artistry/blog
+                     </a>
+                  </li>
+               </ul>
             </div>
-        <div class="bottom-nav" id="connect">
-            <h3> CONNECTS
-            </h3>
-            <ul>       
-            <li><a href="" title="facebook">facebook
-                </a>
-            </li>
-            <li><a href="" title="twitter">twitter
-                </a>
-            </li>
-            <li><a href="" title="instagram">instagram
-                </a>
-            </li>
-            <li><a href="" title="pinterest">pinterest
-                </a>
-            </li>
-            </ul>
+            <div class="bottom-nav" id="account">
+               <h3> YOUR ACCOUNT
+               </h3>
+               <ul>
+                  <li><a href="" title="signin/view account">signin/view account
+                     </a>
+                  </li>
+                  <li><a href="" title="order status">order status
+                     </a>
+                  </li>
+                  <li><a href="" title="products">products
+                     </a>
+                  </li>
+                  <li><a href="" title="gift cards">gift cards
+                     </a>
+                  </li>
+                  <li><a href="" title="cart">cart
+                     </a>
+                  </li>
+               </ul>
             </div>
-            
-            </footer>
-        </body>
-        </html>
-        
-        <!-- TODO: Populate this page with all the content you deem
-             necessary to create a compelling product page! -->
-
-        <!-- TODO: Create an area to put the explainer video. -->
-
-        <!-- TODO: Create an area to put the long product description. -->
-
-        <!-- TODO: Create an area to put customer testimonials. -->
-
-        <!-- TODO: Create an area to show features. -->
-
-        <!-- TODO: Create an area to show company contact info (phone,
-             location, etc.) -->
-
-        <!-- TODO: Create an area that allows users to Share links to the
-             page. -->
-
-        <!-- TODO: Create a call to action link to get users to sign up for the
-             service. -->
-
+            <!--social links-->
+            <div class="bottom-nav" id="connect">
+               <h3> CONNECTS
+               </h3>
+               <ul>
+                  <li>
+                     <a href="" title="facebook"><img src=/sociallinks/facebook.png>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="" title="twitter"><img src=/sociallinks/twitter.png>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="" title="instagram"><img src=/sociallinks/instragamicon.png>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="" title="pinterest"><img src=/sociallinks/pinterest.png>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </footer>
+      </div>
+   </body>
+   <script>
+      $('.carousel').carousel({
+          interval: 3000
+      })
+   </script>
+</html>
